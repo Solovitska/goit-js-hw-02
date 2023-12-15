@@ -1,13 +1,13 @@
 function checkForSpam(message) {
 const lowerCaseMessage = message.toLowerCase(); 
-// Перевірка на забоонені символи
+// Checking for forbidden characters
 if (lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale")) {
     return true;
   } else {
     return false;
   }
 }
-// Перевіряємо 
+//  audit
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
 console.log(checkForSpam("Get best sale offers now!")); // true

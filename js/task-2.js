@@ -1,13 +1,13 @@
 function formatMessage(message, maxLength) {
     if (message.length <= maxLength) {
-    //  Повертаєм рядок без змін (попередній)
+    //  We return the line unchanged (previous)
         return message;   
     } else {
-        // Обрізаєм рядок до maxLength символів та додали ... в кінці
+        // We cut the string to maxLength characters and added ... at the end
         return message.slice(0, maxLength) + "...";
     }
 }
-// Перевіряємо
+// audit
 console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
 console.log(formatMessage("Curabitur ligula sapien", 23)); // "Curabitur ligula sapien"
 console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum facilisis..."
